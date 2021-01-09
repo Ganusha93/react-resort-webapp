@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Hero from "../components/Hero";
 import defaultBcg from "../images/room-1.jpeg";
 import Banner from "../components/Banner";
 import { RoomContext } from "../context"
