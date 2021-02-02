@@ -9,7 +9,8 @@ import Menu from './pages/Menu';
 
 function App() {
   return (
-    <><NavBar />
+    <>
+    <NavBar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/rooms" component={Rooms} />
