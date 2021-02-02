@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Title from "./Title";
-import { RoomContext } from "../context";
+import Title from "../Title";
+import { RoomContext } from "../../contexts/RoomContext";
 import Room from "./Room";
-import Loading from "./Loading";
+import Loading from "../Loading";
 export default class FeaturedRooms extends Component {
     static contextType = RoomContext;
 

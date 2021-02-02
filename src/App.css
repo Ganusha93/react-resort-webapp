@@ -168,6 +168,18 @@ h6 {
   background-image: url("./images/room-2.jpeg");
   min-height: 60vh;
 }
+.menusHero {
+  min-height: calc(100vh - 66px);
+  background: url("./images/foods/menuBcg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menusHero {
+  background-image: url("./images/foods/menuBcg.jpg");
+  min-height: 60vh;
+}
+
 /* End of Hero */
 /* Banner */
 .banner {
@@ -496,11 +508,11 @@ h6 {
   border-radius: 0.3rem;
   margin-right: 0.3rem;
 }
-.single-extra label {
+ .single-extra label {
   display: inline-block;
-  font-size: 0.8rem;
-  margin-left: 0.5rem;
-}
+    font-size: 0.8rem;
+  /*margin-left: 0.5rem; */ 
+} 
 @media screen and (min-width: 776px) {
   .filter-form {
     width: 70vw;

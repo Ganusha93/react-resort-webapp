@@ -1,7 +1,7 @@
 import React from 'react'
 import { useContext } from "react";
-import { RoomContext } from "../context";
-import Title from "./Title";
+import { RoomContext } from "../../contexts/RoomContext";
+import Title from "../Title";
 
 const getUnique = (items, value) => {
     return [...new Set(items.map(item => item[value]))]
@@ -34,7 +34,7 @@ export default function RoomFilter({ rooms }) {
                     <select name="capacity" id="capacity" onChange={handleChange} value={capacity} className="form-control">{peoples}</select>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="price">room price ${price}</label>
+                    <label htmlFor="price">room price ¥{price}</label>
                     <input type="range" min={minPrice} max={maxPrice} name="price" id="price" onChange={handleChange} value={price} className="form-control" />
                 </div>
                 {/* size */}

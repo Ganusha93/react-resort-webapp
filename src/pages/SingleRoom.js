@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import defaultBcg from "../images/room-1.jpeg";
 import Banner from "../components/Banner";
-import { RoomContext } from "../context"
+import { RoomContext } from "../contexts/RoomContext"
 import { Link } from 'react-router-dom';
 import StyledHero from '../components/StyledHero';
 
@@ -33,7 +33,7 @@ export default class SingleRoom extends Component {
         return (
             <>
                 <StyledHero img={mainImg || this.state.defaultBcg}>
-                    <Banner title={`${name} room`} subtitle="deluxe rooms starting at $299">
+                    <Banner title={`${name} room`} subtitle="deluxe rooms starting at ¥5000">
                         <Link to="/rooms" className="btn-primary">back to rooms</Link>
                     </Banner>
                 </StyledHero>
@@ -49,7 +49,7 @@ export default class SingleRoom extends Component {
                         <article className="info">
                             <h3>info</h3>
                             <h6>price : ${price}</h6>
-                            <h6>size : ${size} SQFT</h6>
+                            <h6>size : {size} SQFT</h6>
                             <h6>Max Capacity : {
                                 capacity > 1 ? `${capacity} people` : `${capacity} persons`
                             }</h6>
